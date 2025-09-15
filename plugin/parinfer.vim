@@ -299,7 +299,7 @@ function! s:initialize_buffer() abort
 endfunction
 
 augroup Parinfer
-  autocmd FileType clojure,scheme,lisp,racket,hy,fennel,janet,carp,wast,yuck,dune call <SID>initialize_buffer()
+  autocmd FileType clojure,scheme,lisp,racket,hy,fennel,janet,carp,wast,yuck,dune,query call <SID>initialize_buffer()
 augroup END
 
 " Handle the case where parinfer was lazy-loaded
